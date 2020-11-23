@@ -39,7 +39,7 @@ def updateStatus():
         activity = isActive(dev)
         if activity != dev["active"]:
             dev["active"] = activity
-            lastChange = datetime.datetime.now()
+            dev["lastChange"] = datetime.datetime.now()
     syncData()
 
 if __name__ == "__main__":
